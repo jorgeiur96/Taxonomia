@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvtaxonomia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="16dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:padding="@dimen/cardview_compat_inset_shadow"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/IMGfotoCard"
+            android:layout_width="255dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon" />
+
+        <TextView android:id="@+id/urlImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tvCardview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Comun:"
+                    android:textColor="@color/colorblanco"
+                    />
+                <TextView
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/tvCardviewnco"
+                    android:textColor="@color/colorblanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvCardview2"
+                    android:textColor="@color/colorblanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Cientifico:"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvCardviewnci"
+                    android:textColor="@color/colorblanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvCardview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona :"
+                    android:textColor="@color/colorblanco"
+                    />
+                <TextView
+                    android:layout_marginLeft="99dp"
+                    android:id="@+id/tvCardviewnzo"
+                    android:textColor="@color/colorblanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

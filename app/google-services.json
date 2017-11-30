@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "417082339497",
+    "firebase_url": "https://biologiataxonomia.firebaseio.com",
+    "project_id": "biologiataxonomia",
+    "storage_bucket": "biologiataxonomia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417082339497:android:d27c0d853cd500dd",
+        "android_client_info": {
+          "package_name": "com.unamjorge.practicas.desarrollotaxonomia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417082339497-d1qrkqf24jlumt8qik7u87fafl2bi7md.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unamjorge.practicas.desarrollotaxonomia",
+            "certificate_hash": "c503943172d077795b0c3d2817dfc17a32b7fdf0"
+          }
+        },
+        {
+          "client_id": "417082339497-8f50n5rv61uufrfc2o3fejb5i08c0s0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsKyWpG9Z34vv9hF9cktqlw42LpFawAZ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417082339497-8f50n5rv61uufrfc2o3fejb5i08c0s0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

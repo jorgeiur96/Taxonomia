@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unamjorge.practicas.desarrollotaxonomia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aves"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityRegistro" />
+        <activity android:name=".Pimerlayout" />
+        <activity android:name=".RegistrarDatos" />
+
+
+        <activity android:name=".ListaElementos"
+            android:parentActivityName=".Escoger">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Escoger"
+                >
+            </meta-data>
+        </activity>
+
+
+
+        <activity android:name=".Escoger"
+            android:parentActivityName=".Pimerlayout">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pimerlayout"
+                >
+            </meta-data>
+        </activity>
+
+
+        <activity android:name=".ZonasActivity"
+            android:parentActivityName=".Escoger">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Escoger"
+                >
+            </meta-data>
+        </activity>
+
+
+        <activity android:name=".CatZonas"
+            android:parentActivityName=".ZonasActivity">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ZonasActivity"
+                >
+            </meta-data>
+        </activity>
+
+
+        <activity android:name=".TiposTaxo"
+            android:parentActivityName=".Escoger">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Escoger"
+                >
+            </meta-data>
+        </activity>
+
+
+        <activity android:name=".CatTipo"
+            android:parentActivityName=".TiposTaxo">
+            <!-- Soporte para versiones anteriores a 4.0: -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TiposTaxo"
+                >
+            </meta-data>
+        </activity>
+        <activity android:name=".DetallesTaxo"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unamjorge.practicas.desarrollotaxonomia.Escoger">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Aves"/>
+
+        <ImageButton
+            android:id="@+id/btnListaraves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aves"
+            android:onClick="Listaaves"
+            android:background="@color/colorblanco"
+            android:layout_gravity="center"
+            android:tooltipText="Lista de aves "/>
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="zona"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map"
+            android:background="@color/colorblanco"
+            android:layout_gravity="center"
+            android:onClick="listaZonas"
+            android:tooltipText="Lista de aves "/>
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tipo"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tipo"
+            android:layout_gravity="center"
+            android:onClick="listaZonaspr"
+            android:background="@color/colorblanco"
+            android:tooltipText="Lista de aves "/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

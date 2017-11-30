@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unamjorge.practicas.desarrollotaxonomia.MainActivity">
+
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/primary_text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Pasword"
+                android:textColor="@color/primary_text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/enviar_boton"
+            android:text="Entrar"
+            android:onClick="btnClick1"
+
+            android:theme="@style/MibotonRaised" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:theme="@style/MibotonRaised"></com.google.android.gms.common.SignInButton>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+
+
+            <TextView
+                android:id="@+id/txtregistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:onClick="Registar"
+
+                />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

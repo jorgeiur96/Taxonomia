@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unamjorge.practicas.desarrollotaxonomia.RegistrarDatos">
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="@dimen/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Codigo"
+            android:textColor="@color/primary_text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNombrecientifico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre cientifico "
+            android:textColor="@color/primary_text"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNombreComun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Nombre Comun"
+            android:textColor="@color/primary_text"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Familia"
+                android:textColor="@color/primary_text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtCaracteristicasGenerales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Caracteristicas Generales"
+                android:textColor="@color/primary_text"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtHabitat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Habitat"
+                android:textColor="@color/primary_text"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtZona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Zona"
+                android:textColor="@color/primary_text"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnRegistrar"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:onClick="Btnclick2"
+            android:drawableLeft="@drawable/enviar_boton"
+            android:theme="@style/MibotonRaised" />
+    </LinearLayout>
+
+</RelativeLayout>

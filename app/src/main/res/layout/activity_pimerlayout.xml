@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unamjorge.practicas.desarrollotaxonomia.Pimerlayout">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        android:src="@drawable/iconfon" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:text="@string/log_out"
+        android:onClick="logOut"
+        android:id="@+id/button2"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:onClick="revoke"
+        android:text="@string/revoke" />
+
+</LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/Imgimagenes"
+            android:layout_width="330dp"
+            android:layout_height="267dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnbuscar"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:onClick="Btnclick1"
+            android:theme="@style/MibotonRaised"
+            android:text="Cargar Fotos" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/Listar"
+            android:layout_width="282dp"
+            android:theme="@style/MibotonRaised"
+            android:layout_height="wrap_content"
+            android:text="Ver Elementos" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
