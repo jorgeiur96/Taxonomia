@@ -86,7 +86,7 @@ public class CatZonas extends AppCompatActivity {
         AsyncHttpClient client =new AsyncHttpClient();
         String url="https://serox.000webhostapp.com/Catzonas.php";
         RequestParams parametros =new RequestParams();
-        String jor="monteria";
+        // String jor="monteria";
         parametros.put("zona","'"+datos+"'");
 
         client.post(url, parametros, new AsyncHttpResponseHandler() {

@@ -118,7 +118,7 @@ public class ZonasActivity extends AppCompatActivity {
             String
                     zonaa;
 
-            for (int i=0;i<21;i++){
+            for (int i=0;i<jsonArray.length();i++){
 
                 zonaa=jsonArray.getJSONObject(i).getString("zona");
 
